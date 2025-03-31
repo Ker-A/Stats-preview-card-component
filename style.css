@@ -1,0 +1,115 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+}
+
+/**TXT*/
+h1{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+}
+h2{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: hsl(0, 0%, 100%);
+}
+p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.75);
+ 
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+/**Clases*/
+.container{
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+.info{
+    padding: 10px 30px;
+
+}
+.text{
+    padding-bottom: 10px;
+}
+.stats p{
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+}
+
+/**IMG*/
+.imgDesktop{
+    display: none;
+}
+.imgMobile{
+    display: block;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%px;
+    height: auto;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+/**Mobile*/
+@media (min-width: 600px){ 
+
+    /**TXT*/
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 21px;
+    }
+
+    /**Clases*/
+    .container{
+        flex-direction: row;
+        text-align: start;
+        max-width: 100%;
+    }
+    .info{
+        padding: 60px 0px 50px 50px;
+        width: 500px;
+    }
+    .text{
+        padding-bottom: 50px;
+    }
+    .stats{
+        display: flex;
+        justify-content: space-between;
+    }
+    .stats p{
+        padding-right: 50px;
+    }
+    
+    /**IMG*/
+    .imgDesktop{
+        display: block;
+        border-radius: 0 10px 10px 0;
+        width: 500px;
+        height: 100%;
+        object-fit: cover;
+        margin-left: 20px;
+    }
+    .imgMobile{
+        display: none;
+    }
+}
